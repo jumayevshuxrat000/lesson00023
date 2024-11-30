@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+      <header>
+        <h1>JavaScript: Map va Set Tushuntiruvchi Sayt</h1>
+      </header>
+      
+      <main>
+        <section id="map-section">
+          <h2>Map</h2>
+          <p>
+            <strong>Map</strong> bu JavaScriptdagi maxsus ma'lumot tuzilmasi bo'lib, u <em>kalit-qiymat</em> juftlarini saqlaydi.
+            Kalitlar har qanday turdagi ma'lumot (shu jumladan object) bo'lishi mumkin.
+          </p>
+          <h3>Map xususiyatlari:</h3>
+          <ul>
+            <li>Kalitlar unikaldir, qaytarilmaydi.</li>
+            <li>Qiymatlar har qanday turdagi bo'lishi mumkin (raqam, string, object, va h.k.).</li>
+            <li>Metodlar: <code>set</code>, <code>get</code>, <code>delete</code>, <code>has</code>, va boshqalar.</li>
+          </ul>
+          <div class="example">
+            <h4>Misol:</h4>
+            <pre>
+                   const map = new Map();
+                   map.set('name', 'John');
+                   map.set('age', 30);
+                   console.log(map.get('name')); // John
+                   console.log(map.has('age')); // true
+            </pre>
+          </div>
+        </section>
+    
+        <section id="set-section">
+          <h2>Set</h2>
+          <p>
+            <strong>Set</strong> bu JavaScriptdagi boshqa bir ma'lumot tuzilmasi bo'lib, u faqatgina unikalligi kafolatlangan qiymatlarni saqlaydi.
+            Shu sababli, qiymatlar qaytarilmaydi.
+          </p>
+          <h3>Set xususiyatlari:</h3>
+          <ul>
+            <li>Qiymatlar yagona (unikal) bo'lishi kerak.</li>
+            <li>Metodlar: <code>add</code>, <code>delete</code>, <code>has</code>, va boshqalar.</li>
+          </ul>
+          <div class="example">
+            <h4>Misol:</h4>
+            <pre>
+                 const set = new Set();
+                 set.add(1);
+                 set.add(2);
+                 set.add(2); // Qaytarilmaydi
+                 console.log(set.has(1)); // true
+                 console.log(set.size); // 2
+            </pre>
+          </div>
+        </section>
+      </main>
+    
+      <footer>
+        <p>&copy; 2024 JavaScript Tushuntiruvchi Sayt</p>
+      </footer>
+    <script type="module" src="./app.js"></script>
+</body>
+</html>
