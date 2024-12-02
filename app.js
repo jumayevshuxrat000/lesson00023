@@ -1,7 +1,5 @@
 import { Student,Organization , Teacher, Group, Payment, Salary  } from './main.js';
 
-import { Student, Teacher, Group, Payment, Salary, Organization } from './path-to-file.js';
-
 let student = new Student("Jumayev", "Shuxrat", "+123456789", "77 Street");
 console.log(student.telNumber); 
 student.telNumber = "+987654321";
